@@ -116,7 +116,7 @@ export class BaserowTrigger implements INodeType {
 				return toOptions(tables);
 			},
 		},
-	}
+	};
 
 	// @ts-ignore (because of request)
 	webhookMethods = {
@@ -159,8 +159,8 @@ export class BaserowTrigger implements INodeType {
 					events,
 					"request_method": "POST",
 					"name": `${this.getWorkflow().name}`,
-					"use_user_field_names": true
-				}
+					"use_user_field_names": true,
+				};
 
 				const webhookData = this.getWorkflowStaticData('node');
 
