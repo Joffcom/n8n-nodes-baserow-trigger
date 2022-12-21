@@ -1,19 +1,21 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-baserow-trigger",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n community node for creating Baserow Triggers",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "baserow",
+    "trigger"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://joffcom.net",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Jonathan",
+    "email": "jonathan@joffcom.net"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/joffcom/n8n-nodes-baserow-trigger.git"
   },
   "main": "index.js",
   "scripts": {
@@ -29,13 +31,8 @@
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
-    ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/BaserowTrigger/BaserowTrigger.node.js"
     ]
   },
   "devDependencies": {
